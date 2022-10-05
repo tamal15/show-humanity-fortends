@@ -1,0 +1,9 @@
+.edu{
+    font-size: 24px;
+    font-weight: 700;
+}
+.edu:hover{
+    background-color: #2B5278;
+    padding:1px;
+    border-radius: 5px;
+}

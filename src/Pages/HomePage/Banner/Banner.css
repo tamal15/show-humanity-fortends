@@ -1,0 +1,118 @@
+.hero-section {
+    position: relative;
+    background-image: url("https://st2.depositphotos.com/1769810/11891/i/950/depositphotos_118915374-stock-photo-amroha-utter-pradesh-india-2011.jpg");
+    /* height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+.hero-section2 {
+    position: relative;
+    background-image: url("https://images.hindustantimes.com/img/2022/06/06/1600x900/Image_for_ht_1654527406134_1654527420602.png");
+    /* background-image: url("https://i.pinimg.com/originals/f3/ca/a3/f3caa3a31100da48c5c09f14063fc9d7.jpg"); */
+    /* height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+.hero-section3 {
+    position: relative;
+    /* background-image: url("https://kusumsarees.in/files/9156574315048.jpeg"); */
+    background-image: url("https://media.npr.org/assets/img/2017/09/15/dsc_7345-51_custom-c51102400449978bdaa3802dd69fc3b20c65a9d2-s1100-c50.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+ 
+  /* .hero-section::before{
+   
+    content:"";
+    background-color: black;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: .7;
+   
+  } */
+
+  .hero-section::before{
+    position: absolute;
+    content:"";
+    background-color: black;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+  }
+  .hero-section2::before{
+    position: absolute;
+    content:"";
+    background-color: black;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+  }
+  .hero-section3::before{
+    position: absolute;
+    content:"";
+    background-color: black;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+  }
+
+
+  .mouses{
+    /* grid-template-columns: repeat(3,1fr); */
+    display: flex;
+   }
+   
+   .keys{
+       /* background-color:darkcyan; */
+       margin-top: -15px;
+   }
+   
+   .mouses i{
+       color:white;
+       font-size: 35px;
+   }
+   /* .laptops i{
+       color:white;
+       font-size: 25px;
+   } */
+   .dell{
+       background-color: white;
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhA1nLXUvgjR2LmXFGZ-l6lU94WEGkrwXlNlbHXSmoAi0ovXGGCBBoyqkm41_GMeZjuZM&usqp=CAU");
+       /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK6vPRtdPjNl1uDJCAyxa1RbAB2uLht8b5q6LL8pmeuk_LJKKVPxdBa1iSwVtLFJHqqAs&usqp=CAU"); */
+   }
+   .dellss{
+       background-color: white;
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl33RkDOksaAFAX4jDUb8gqbqAE5L71VTFGA&usqp=CAU");
+   }
+   
+   
+   
+   .dells{
+       background-color: #1f2833;
+       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRWeo9ybHmOGrxzVwZJYe3JOsCBnGJzVYIUv4CFGFHpm3DfgkCjbPW47up2BUfL7lqmcU&usqp=CAU');
+       color:white;
+       /* padding:7px; */
+   }
+   /* 1f2833 */
+   .stand-bg{
+       background-color:floralwhite;
+      
+       margin-bottom: 70px;
+   }
+   .dones{
+       color:white;
+   }
