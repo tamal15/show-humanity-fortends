@@ -19,6 +19,11 @@ import About from './Pages/HomePage/Home/About/About';
 import Health from './Pages/HomePage/Home/WorkHeader/Health';
 import Services from './Pages/HomePage/Home/Services/Services';
 import MyOrder from './Pages/Dashboard/UserDashboard/MyOrder';
+import DonetTakaUpload from './Pages/Dashboard/AdminDashboard/DonetTaka/DonetTakaUpload';
+import VirdhaAshramDonet from './Pages/HomePage/Home/VirdhaAshramDonet/VirdhaAshramDonet';
+import EtimKhanaDonet from './Pages/HomePage/Home/VirdhaAshramDonet/EtimKhanaDonet/EtimKhanaDonet';
+import Profile from './Pages/Dashboard/Profile/Profile';
+import InstitutionShowData from './Pages/Dashboard/InstitutionShowData/InstitutionShowData';
 function App() {
   return (
     <div className="App">
@@ -36,6 +41,8 @@ function App() {
      <Route path="/about" element={<About />}/>
      <Route path="/health" element={<Health />}/>
      <Route path="/service" element={<Services />}/>
+     <Route path="/virdhains" element={<VirdhaAshramDonet />}/>
+     <Route path="/etimkhanadonet" element={<EtimKhanaDonet />}/>
      
      
      
@@ -50,6 +57,9 @@ function App() {
               <Route path="/dashboard/verifydata" element={<VerifyData />} />
               <Route path="/dashboard/adminverifydata" element={<AdminVerify />} />
               <Route path="/dashboard/myorder" element={<MyOrder />}/>
+              <Route path="/dashboard/servicedata" element={<DonetTakaUpload />}/>
+              <Route path="/dashboard/profile" element={<Profile />}/>
+              <Route path="/dashboard/institutionShow" element={<InstitutionShowData />}/>
      </Route>
               
      </Routes>

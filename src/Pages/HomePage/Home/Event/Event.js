@@ -2,12 +2,26 @@ import React from 'react';
 // import image1 from '../../../../images/developer.jpg'
 // import image2 from '../../../../images/mern.png'
 // import image3 from '../../../../images/designer.jpg'
+import bg from "../../../../images/wave-pink.svg";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import './Event.css'
 const Event = () => {
     return (
-        <div>
-            <h1 className='mt-5'> Events and Updates</h1>
-            <div className="container mb-5 p-3 mt-5">
+        <div className=' mt-5' >
+           
+            <Box
+             id="gallery"
+             sx={{
+               backgroundImage: `url(${bg})`,
+               backgroundSize: "cover",
+               backgroundRepeat: "no-repeat",
+               display:"block",
+               py: 18,
+              //  height:"800px"
+             }}>
+              <h1 data-text="User Reviews" className="text-center my-3 user-reviews mb-2"> Events and Update</h1>
+            <hr className='' style={{  width: '15%', height: '5px', backgroundColor: 'blsck', display:"inline-block", border:0}} />
+            <div className="container mt-5 mb-3">
                   {/* <h1  className="text-info mb-5 mt-5">Services</h1> */}
             <div data-aos="fade-up" className="row row-cols-1 row-cols-md-3 g-4">
 
@@ -16,7 +30,7 @@ const Event = () => {
                 
             
                 {/* <h1>{id}</h1> */}
-                            <img style={{border:"2px solid white"}} className="image-design" src="https://www.smilefoundationindia.org/images/home/event-img/2.jpg" class="card-img-top" alt="..." />
+                            <img style={{border:"2px solid white"}} className="image-design" src="https://c8.alamy.com/comp/ECHMFW/two-elderly-women-7888-home-for-the-elderly-health-care-nurse-ECHMFW.jpg" class="card-img-top" alt="..." />
 
 
                           </div>
@@ -28,7 +42,7 @@ const Event = () => {
                 
             
                 {/* <h1>{id}</h1> */}
-                            <img className="image-design" src="https://www.smilefoundationindia.org/images/home/event-img/3.jpg" class="card-img-top" alt="..." />
+                            <img className="image-design" src="https://st4.depositphotos.com/1854227/22566/i/600/depositphotos_225669392-stock-photo-a-health-visitor-bringing-breakfast.jpg" class="card-img-top" alt="..." />
 
 
                           </div>
@@ -41,7 +55,7 @@ const Event = () => {
                 
             
                 {/* <h1>{id}</h1> */}
-                            <img className="image-design" src="https://www.smilefoundationindia.org/images/home/event-img/1.jpg" class="card-img-top" alt="..." />
+                            <img className="image-design" src="https://www.wvi.org/sites/default/files/styles/large_780x520/public/IMG_0596.png?itok=tho59dDH" class="card-img-top" alt="..." />
 
 
                           </div>
@@ -91,6 +105,7 @@ const Event = () => {
             </div>
                 
             </div>
+            </Box>
         </div>
     );
 };

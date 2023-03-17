@@ -84,7 +84,7 @@ const StreetChild = () => {
     // }, [type, year, code, page]);
 
     const fetchData = () => {
-      fetch('https://cryptic-lowlands-50640.herokuapp.com/products')
+      fetch('https://show-humanity-front-production.up.railway.app/products')
       .then(res => res.json())
       .then(data => {
           setQuestions(data.allData)
@@ -143,7 +143,7 @@ const StreetChild = () => {
 
 
     useEffect(()=>{
-        fetch('https://cryptic-lowlands-50640.herokuapp.com/products')
+        fetch('https://show-humanity-front-production.up.railway.app/products')
         .then(res=>res.json())
         .then(data=>setModel(data.allData))
     },[])
@@ -154,7 +154,7 @@ const StreetChild = () => {
         // const values = e.target.value;
         // console.log(values)
         // console.log(questions)
-        const newValue = model?.filter(ques => ques?.productName?.toLocaleLowerCase()?.includes(searchValue))
+        const newValue = model?.filter(ques => ques?.name?.toLocaleLowerCase()?.includes(searchValue))
         
         // console.log(newValue)
         // newValue.length === 0 && alert("warning", "Warning...", "Not Found Your Result")
@@ -197,14 +197,14 @@ const StreetChild = () => {
                 </div>
                 <div className="col">
                     <div className="search-box mb-8">
-                        {/* <form onSubmit={handleValue}>
+                    <form onSubmit={handleValue}>
                          
-                            <input onBlur={handleSearch} type="text" name='search'
-                            style={{fontWeight:"600"}}
-                            placeholder='Example : achol  productName ' />
-                           
-                            <button type='submit'>Search</button>
-                        </form> */}
+                         <input onBlur={handleSearch} type="text" name='search'
+                         style={{fontWeight:"600"}}
+                         placeholder='Name Example : zaman  ' />
+                        
+                         <button type='submit'>Search</button>
+                     </form>
                     </div>
                 </div>
             </div>

@@ -25,6 +25,7 @@ import initial from "../Firebase/firebase.init";
   const [error, setError] = useState("");
   const [admin, setAdmin] = useState(false)
   const [police, setPolice] = useState(false)
+  const [institution, setInstitution] = useState(false)
 
 //   navbar toggle 
 const [toggle,setToggle]=useState(false)
@@ -117,7 +118,7 @@ const registerUser = (email, password, name,client, location, navigate) => {
   // save user to database 
   const sendUser = (email, displayName,client,method) => {
     const user = { email, displayName,client };
-    fetch('https://cryptic-lowlands-50640.herokuapp.com/users', {
+    fetch('https://show-humanity-front-production.up.railway.app/users', {
       method: method,
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(user)
@@ -146,16 +147,25 @@ const registerUser = (email, password, name,client, location, navigate) => {
 
   // buyer CONDITIONAL DATALOAD
   useEffect(() => {
-    fetch(`https://cryptic-lowlands-50640.herokuapp.com/users/${user.email}`)
+    fetch(`https://show-humanity-front-production.up.railway.app/users/${user.email}`)
       .then(res => res.json())
       .then(data => {
         setPolice(data?.police)
       })
   }, [user.email])
 
+  // institution email check data 
+  useEffect(() => {
+    fetch(`https://show-humanity-front-production.up.railway.app/userIns/${user.email}`)
+      .then(res => res.json())
+      .then(data => {
+        setInstitution(data?.institution)
+      })
+  }, [user.email])
+
  // admin role the database 
  useEffect(()=>{
-  fetch(`https://cryptic-lowlands-50640.herokuapp.com/userLogin/${user.email}`)
+  fetch(`https://show-humanity-front-production.up.railway.app/userLogin/${user.email}`)
   .then(res=>res.json())
   .then(data=>setAdmin(data?.admin))
 },[user.email])
@@ -172,7 +182,8 @@ const registerUser = (email, password, name,client, location, navigate) => {
     setToggle,
     handleClick,
     admin,
-    police
+    police,
+    institution
    
   }
   }

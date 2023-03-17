@@ -13,7 +13,7 @@ import useAuth from '../Hook/useAuth';
 
 
 const Dashboard = () => {
-    const { admin, userLogOut ,police} = useAuth()
+    const { admin, userLogOut ,police,institution} = useAuth()
     return (
         <div  className='dashboard' style={{background:""}}>
             {/* <Header></Header> */}
@@ -40,7 +40,7 @@ const Dashboard = () => {
                             </li>
                            
                             <li>
-                                  <NavLink className="des" to={`userProfile`} style={({ isActive }) => ({
+                                  <NavLink className="des" to={`profile`} style={({ isActive }) => ({
                                       color: isActive ? "white" : "white",
                                   })}><FaUser style={{textAlign:"left"}} className='me-1' /> My Profile</NavLink>
                               </li>
@@ -92,6 +92,34 @@ const Dashboard = () => {
                             }
 
 
+                            {/* institution data  */}
+
+                            {
+                                institution &&
+                               <div>
+                                 
+                              
+                               
+
+                           
+                                
+                              
+                               <li>
+                                <NavLink className="des" to={`servicedata`} style={({ isActive }) => ({
+                                    color: isActive ? "white" : "white",
+                                })}><FaBookmark className='me-1' /> institution</NavLink>
+                            </li> 
+                               <li>
+                                <NavLink className="des" to={`institutionShow`} style={({ isActive }) => ({
+                                    color: isActive ? "white" : "white",
+                                })}><FaBookmark className='me-1' /> institution Show</NavLink>
+                            </li> 
+                               
+                               </div>
+                            }
+
+
+
                          {
                             admin && 
                            <div style={{textAlign:"left"}}>
@@ -140,7 +168,7 @@ const Dashboard = () => {
                         }
 
                         {
-                            !admin && !police &&
+                            !admin && !police && !institution &&
                             <div>
                                   {/* <li>
                                   <NavLink className="des" to={`useraddQuestion`} style={({ isActive }) => ({

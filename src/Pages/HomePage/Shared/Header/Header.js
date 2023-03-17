@@ -41,46 +41,50 @@ const Header = () => {
                             {/* <Nav style={{color:'white'}}> */}
                             <Dropdown>
       <Dropdown.Toggle className='drops' id="dropdown-basic">
-        All Catagories
+        All Service
       </Dropdown.Toggle>
 
       <Dropdown.Menu className='drop-menu'>
-        {/* start  */}
-
-       
-        {/* end  */}
-
-
-         {/* start  */}
-
+        
          {/* <Dropdown>
       <Dropdown.Toggle className='drops' id="dropdown-basic">
         Shilpo
       </Dropdown.Toggle>
 
-      <Dropdown.Menu className='drops-menu'>
-      <Dropdown.Item className='down-color' href="NakshiKatha">Naksi katha</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="NakshiPakha">Nakshi Pakha</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="shitalPati">Shital Pati</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="pottery">Pottery</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="dhatobshilpo">Dhatob Shilpo</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="darushilpo">Daru Shilpo</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="jhinukshilpo">Jhinuk Shilpo</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="putulshilpo">Putul Shilpo</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="pitolkasha">PitolKasha Shilpo</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="bateshilpo">Bate Shilpo</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="shankho">Shankho Shilpo</Dropdown.Item>
-       
-      </Dropdown.Menu>
+      
     </Dropdown> */}
 
         {/* end  */}
         
         <Dropdown.Item className='down-color' href="/shishu">Street Child</Dropdown.Item>
         <Dropdown.Item className='down-color' href="/old">Old Pople</Dropdown.Item>
-        {/* <Dropdown.Item className='down-color' href="#/action-3">Shirt</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="#/action-3">Watch</Dropdown.Item>
-        <Dropdown.Item className='down-color' href="#/action-3">Shoe</Dropdown.Item> */}
+     
+      </Dropdown.Menu>
+    </Dropdown>
+
+
+    {/* next  */}
+
+    <Dropdown>
+      <Dropdown.Toggle className='drops' id="dropdown-basic">
+        Donate
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu className='drop-menu'>
+        
+         {/* <Dropdown>
+      <Dropdown.Toggle className='drops' id="dropdown-basic">
+        Shilpo
+      </Dropdown.Toggle>
+
+      
+    </Dropdown> */}
+
+        {/* end  */}
+        
+        <Dropdown.Item className='down-color' href="/virdhains">VirdhaAsram</Dropdown.Item>
+        <Dropdown.Item className='down-color' href="/etimkhanadonet">Etim Khana</Dropdown.Item>
+     
       </Dropdown.Menu>
     </Dropdown>
                             {/* </Nav> */}

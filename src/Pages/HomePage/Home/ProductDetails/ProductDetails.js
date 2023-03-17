@@ -61,7 +61,7 @@ import useAuth from "../../../Hook/useAuth";
     const [isFetched, setIsFetched] = useState(0);
   
     useEffect(() => {
-      fetch(`https://cryptic-lowlands-50640.herokuapp.com/details/${id}`)
+      fetch(`https://show-humanity-front-production.up.railway.app/details/${id}`)
         .then((res) => res.json())
         .then((data) => setBook(data));
     }, [id]);
@@ -104,7 +104,7 @@ import useAuth from "../../../Hook/useAuth";
         data.status="pending"
      
 
-        fetch("https://cryptic-lowlands-50640.herokuapp.com/userCollected", {
+        fetch("https://show-humanity-front-production.up.railway.app/userCollected", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

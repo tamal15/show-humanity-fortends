@@ -5,6 +5,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
 import { FcGoogle } from 'react-icons/fc'
 import useAuth from '../../../Hook/useAuth';
+import Header from '../../Shared/Header/Header';
+import Footer from '../../Home/Footer/Footer';
 
 
 
@@ -33,8 +35,9 @@ const Login = () => {
     }
     return (
       <div className='login-background'>
+          <Header></Header>
           <div className='py-5'>
-            {/* <Header></Header> */}
+          
             <Container>
                 <Row>
                 <div className='row'>
@@ -58,6 +61,7 @@ const Login = () => {
 
                                 <input
                                 style={{fontWeight:"500"}}
+                                type="password"
                                     className='w-75 mb-3'
                                     {...register("password", { required: true })} placeholder='Enter Password' />
                                 <br />
@@ -78,6 +82,7 @@ const Login = () => {
             </Container>
           
         </div>
+        <Footer></Footer>
       </div>
     );
 };

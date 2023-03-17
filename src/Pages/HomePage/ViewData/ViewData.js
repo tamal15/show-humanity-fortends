@@ -21,7 +21,7 @@ import {
 import { BorderVertical } from '@mui/icons-material';
 import useAuth from '../../Hook/useAuth';
 // import OrderReviewPage from '../../OrderReviewPage/OrderReviewPage';
-const ViewData = () => {
+const  ViewData = () => {
     const [work, setWork] = useState([])
 
     // const [cart, setCart] = useContext(CartContext);
@@ -36,7 +36,7 @@ const ViewData = () => {
     //   },[])
 
     const fetchData = () => {
-      fetch('https://cryptic-lowlands-50640.herokuapp.com/getAdmin')
+      fetch('https://show-humanity-front-production.up.railway.app/getAdmin')
         .then(res => res.json())
         // .then(data => setWork(data))
         .then(data => {

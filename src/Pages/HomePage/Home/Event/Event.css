@@ -1,0 +1,10 @@
+.images-show{
+    background-image: url('../../../../images/wave-pink.svg');
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    /* padding-left: ; */
+    /* padding: 65px; */
+        /* py: 15, */
+}

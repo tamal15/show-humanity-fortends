@@ -20,7 +20,7 @@ const MyOrder = () => {
 // const email=user?.email
 
     useEffect(()=>{
-        fetch(`https://cryptic-lowlands-50640.herokuapp.com/getuserCollected/${user?.email}`)
+        fetch(`https://show-humanity-front-production.up.railway.app/getuserCollected/${user?.email}`)
         .then(res=>res.json())
         .then(data=>{
             setService(data)
@@ -29,7 +29,7 @@ const MyOrder = () => {
 
     const handleDelete=(id)=>{
         const proceed=window.confirm('are you sure, you want to delete');
-        fetch(`https://cryptic-lowlands-50640.herokuapp.com/deleteOrder/${id}`,{
+        fetch(`https://show-humanity-front-production.up.railway.app/deleteOrder/${id}`,{
             method:'DELETE'
         }).then(res=>res.json())
         .then(data=>{

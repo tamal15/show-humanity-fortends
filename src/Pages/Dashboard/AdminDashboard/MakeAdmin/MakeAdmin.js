@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     }
     const handleAdmin=e=>{
         const user={email}
-        fetch('https://cryptic-lowlands-50640.herokuapp.com/userLogin/admin',{
+        fetch('https://show-humanity-front-production.up.railway.app/userLogin/admin',{
             method:'PUT',
             headers:{
                 'content-type':'application/json'

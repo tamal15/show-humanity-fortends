@@ -7,6 +7,8 @@ import { FcGoogle } from 'react-icons/fc'
 
 import './Register.css'
 import useAuth from '../../../Hook/useAuth';
+import Header from '../../Shared/Header/Header';
+import Footer from '../../Home/Footer/Footer';
 
 // import useAuth from '../../Hooks/useAuth';
 
@@ -37,6 +39,7 @@ const Register = () => {
     }
     return (
      <div className='signin-background'>
+        <Header></Header>
            <div className='py-5'>
         <Container>
             <Row>
@@ -68,7 +71,7 @@ const Register = () => {
                             className='w-75 mb-3' {...register("password2", { required: true })} placeholder='Re-enter Password' /> <br />
                             <input
                             style={{fontWeight:"500"}}
-                            className='w-75 mb-3' {...register("client", { required: true })} placeholder='police / user' /> <br />
+                            className='w-75 mb-3' {...register("client", { required: true })} placeholder='police / user/ institution' /> <br />
                             {/* <div >
                                     <select name="client"  className="pending p-2 ">
                                         <option defaultValue="">please Select</option>
@@ -92,6 +95,7 @@ const Register = () => {
             </Row>
         </Container>
     </div>
+    <Footer></Footer>
      </div>
     );
 };

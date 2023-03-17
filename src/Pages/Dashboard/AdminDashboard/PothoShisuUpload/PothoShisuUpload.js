@@ -23,7 +23,7 @@ const PothoShisuUpload = () => {
         // data.status = 'Pending'
      
 
-        fetch("https://cryptic-lowlands-50640.herokuapp.com/PostAdmin", {
+        fetch("https://show-humanity-front-production.up.railway.app/PostAdmin", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

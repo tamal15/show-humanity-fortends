@@ -36,7 +36,7 @@ const AdminVerify = () => {
     //   },[])
 
     const fetchData = () => {
-      fetch('https://cryptic-lowlands-50640.herokuapp.com/getuserCollected')
+      fetch('https://show-humanity-front-production.up.railway.app/getuserCollected')
         .then(res => res.json())
         // .then(data => setWork(data))
         .then(data => {
@@ -57,7 +57,7 @@ const AdminVerify = () => {
     }
     // update status 
     const handleUpdate = (id) => {
-        fetch(`https://cryptic-lowlands-50640.herokuapp.com/updateBook/${id}`, {
+        fetch(`https://show-humanity-front-production.up.railway.app/updateBook/${id}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status}),

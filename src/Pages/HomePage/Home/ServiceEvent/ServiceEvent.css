@@ -1,0 +1,7 @@
+.NurtingEnvironment-container {
+    background-image: url('./img/wave-video.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 195px 0;
+    margin-top: 28px;
+}

@@ -14,7 +14,7 @@ const Contact = () => {
     const onSubmit= (data) =>{
         // console.log(data)
       
-        axios.post('https://cryptic-lowlands-50640.herokuapp.com/contact',data)
+        axios.post('https://show-humanity-front-production.up.railway.app/contact',data)
       .then(res=>{
           console.log(res)
            if(res.data.insertedId){
